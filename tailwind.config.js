@@ -2,6 +2,13 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    screens: {
+      '2xl': { max: '1440px' },
+      xl: { max: '1279px' },
+      lg: { max: '1023px' },
+      md: { max: '767px' },
+      sm: { max: '639px' },
+    },
     fontSize: {
       xs: '0.75rem',
       sm: '0.875rem',
@@ -12,12 +19,19 @@ module.exports = {
       '3xl': '1.875rem',
       '4xl': '2.25rem',
       '5xl': '3rem',
-      '6xl': '4rem',
+      '6xl': '3.4rem',
+      '7xl': '4rem',
     },
     extend: {
       colors: {
+        green: {
+          100: '#B3DDDB',
+          500: '#1E9188',
+          700: '#07352E',
+          800: '#0F241D',
+        },
         gray: {
-          100: '#f7fafc',
+          100: '#F5F5F5',
           200: '#edf2f7',
           300: '#e2e8f0',
           400: '#cbd5e0',
@@ -25,7 +39,7 @@ module.exports = {
           600: '#718096',
           700: '#4a5568',
           800: '#2d3748',
-          900: '#1a202c',
+          900: '#606060',
         },
         blue: {
           100: '#ebf8ff',

@@ -12,10 +12,62 @@ a:hover {
 
 @tailwind utilities;
 
-.content p {
-  @apply my-6;
-}
 
 .content ul {
   @apply my-6;
+}
+
+.carousel-root {
+  @apply
+  h-4/5
+}
+.thumbs-wrapper{
+  @apply
+  hidden
+}
+
+.control-dots {
+  bottom: 70px !important;
+}
+
+.carousel .control-dots .dot {
+  /* background-color: transparent !important; */
+  width: 18px !important;
+  height: 18px !important;
+  border: 2px solid #B3DDDB !important; 
+}
+
+.scroll-bar {
+  display: flex;
+  list-style: none;
+  height: 300px;
+  overflow-x: scroll;
+  padding: 20px 0;
+  flex: 0 0 600px;
+  margin: 0 auto;
+}
+
+.scroll-bar-item{
+  flex: 0 0 200px;
+  background: var(--accent);
+  margin: 0 20px 0 0;
+}
+
+.mapouter{
+  position:relative;
+  text-align:right;
+  width:600px;
+  height:400px;
+}
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  width:600px;
+  height:400px;
+}
+
+.gmap_iframe {
+  width:600px!important;
+  height:400px!important;
 }
