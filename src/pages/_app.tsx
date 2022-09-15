@@ -4,7 +4,7 @@ import type { AppProps } from 'next/app';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
-  <ParallaxProvider scrollAxis="vertical">
+  <ParallaxProvider>
     <Component {...pageProps} />
   </ParallaxProvider>
 );

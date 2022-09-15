@@ -1,7 +1,6 @@
 import type { ReactNode } from 'react';
 
 import Header from '@/components/Header/Index';
-import { AppConfig } from '@/utils/AppConfig';
 
 type IMainProps = {
   meta: ReactNode;
